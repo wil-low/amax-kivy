@@ -1,0 +1,42 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 1
+    spacing: 1
+    BoxLayout:
+        orientation: 'horizontal'
+        padding: 1
+        spacing: 10
+        size_hint: 1, 0.15
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 10, 0
+            spacing: 1
+            size_hint: 0.7, 1
+            Label:
+                text: "Чт 21 ноя 2013"
+                size_hint: 1, 0.5
+                halign: 'left'
+                text_size: self.size
+                font_size: '12dp'
+            Label:
+                text: "18:15, Kiev"
+                size_hint: 1, 0.5
+                halign: 'left'
+                text_size: self.size
+                font_size: '10dp'
+        Button:
+            text: "<"
+            size_hint: 0.1, 1
+        Button:
+            text: ">"
+            size_hint: 0.1, 1
+    Button:
+        text: "Час [font=res/Astronom.ttf]ABCDE[/font] [color=#ff0000]18:36 - 19:52[/color]"
+        size_hint: 1, None
+        markup: True
+        font_size: '20dp'
+    Button:
+        text: "Button 2"
+        size_hint: 1, 0.5
+    Button:
+        text: "Button 3"
